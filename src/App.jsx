@@ -1,10 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./App.css";
+import Head from "./Components/Head";
 
 function App() {
   return (
     <>
-      <h1>Roshni's Collection</h1>
+      <Head></Head>
     </>
   );
 }
