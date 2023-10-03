@@ -1,11 +1,27 @@
 /* eslint-disable react/no-unescaped-entities */
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
-import Head from "./Components/Head";
+
+import Main from "./Components/Main";
+
+import Products from "./Components/Products";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Main></Main>,
+      children: [
+        {
+          path: "/",
+          element: <Products></Products>,
+        },
+      ],
+    },
+  ]);
   return (
     <>
-      <Head></Head>
+      <RouterProvider router={router}></RouterProvider>
     </>
   );
 }

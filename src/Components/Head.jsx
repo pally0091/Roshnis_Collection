@@ -11,7 +11,7 @@ const Head = () => {
           alt=""
         />
       </div>
-      <div className="w-1/3 flex justify-end">
+      <div className="w-1/3 md:flex lg:flex justify-end hidden ">
         <a
           className="mx-2"
           href=""
