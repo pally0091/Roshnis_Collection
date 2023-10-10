@@ -8,14 +8,18 @@ const Products = () => {
       title: "a",
       details: "ab",
       price: 100,
+      discount: 5,
       brand: "d",
+      tuhmb: "image",
     },
     {
       id: 2,
       title: "b",
       details: "ab",
       price: 100,
+      discount: 5,
       brand: "d",
+      tuhmb: "image",
     },
   ];
   console.log(products);
