@@ -5,6 +5,7 @@ import "./App.css";
 import Main from "./Components/Main";
 
 import Products from "./Components/Products";
+import Home from "./Components/Home";
 
 function App() {
   const router = createBrowserRouter([
@@ -14,6 +15,10 @@ function App() {
       children: [
         {
           path: "/",
+          element: <Home></Home>,
+        },
+        {
+          path: "/products",
           element: <Products></Products>,
         },
       ],

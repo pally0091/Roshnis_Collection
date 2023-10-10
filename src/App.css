@@ -4,6 +4,9 @@
 
   text-align: center;
 }
+#home {
+  background: linear-gradient(to top, #f5ce87, #f2fee7);
+}
 body {
   background-color: #f2fee7;
 }
