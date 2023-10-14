@@ -10,7 +10,7 @@ const Products = () => {
       price: 100,
       discount: 5,
       brand: "d",
-      tuhmb: "image",
+      thumb: "image",
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const Products = () => {
       price: 100,
       discount: 5,
       brand: "d",
-      tuhmb: "image",
+      thumb: "image",
     },
   ];
   console.log(products);
@@ -33,6 +33,13 @@ const Products = () => {
             key={products.id}
           >
             <h4>{product.title}</h4>
+            <h6 className="text-right">Brand: {product.brand}</h6>
+            <div className="w-[95%] mx-auto">
+              <img
+                src={product.thumb}
+                alt={product.thumb}
+              />
+            </div>
           </div>
         ))}
       </div>
