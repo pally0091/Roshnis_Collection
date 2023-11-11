@@ -2,14 +2,6 @@
 import React, { useEffect, useState } from "react";
 
 const Products = () => {
-  const [p, setP] = useState();
-
-  useEffect(() => {
-    fetch("/src/api/products")
-      .then((res) => res.json)
-      .then((data) => setP(data));
-  }, []);
-  console.log(p);
   const products = [
     {
       id: 1,
